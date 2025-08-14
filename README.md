@@ -4,7 +4,7 @@ This project implements a machine learning solution to predict real estate price
 
 ## 🚀 Live Demo
 
-**Web Application:** _[Add your Streamlit Cloud link here if deployed]_
+**Web Application:** [https://houses-price-prediction.streamlit.app/](https://houses-price-prediction.streamlit.app/)
 
 ## Project Structure
 
@@ -12,15 +12,19 @@ This project implements a machine learning solution to predict real estate price
 Real Estate Price Prediction/
 │
 ├── README.md                   # Project documentation
+├── .gitignore                  # Git ignore file
+├── requirements.txt            # Python dependencies
 ├── Dataset/
 │   └── estate-data.csv         # Real estate dataset
 ├── Notebook/
 │   └── analysis.ipynb          # Jupyter notebook with complete analysis
 ├── Application/
-│   └── app.py                  # Streamlit web application
-├── Saved Models/
+│   ├── app.py                  # Streamlit web application
 │   ├── scaler.pkl              # Saved StandardScaler for data preprocessing
 │   └── model.pkl               # Saved trained Linear Regression model
+├── Saved Models/
+│   ├── scaler.pkl              # (optional) Saved StandardScaler
+│   └── model.pkl               # (optional) Saved trained model
 ```
 
 ## Dataset
@@ -128,7 +132,8 @@ For making predictions in the web app, provide:
 
 ## 🌐 Deployment
 
-The application can be deployed on **Streamlit Community Cloud** or any platform supporting Python and Streamlit.
+The application is deployed on **Streamlit Community Cloud**:  
+[House Price Predictor](https://houses-price-prediction.streamlit.app/)
 
 ## 🔮 Future Enhancements
 
@@ -157,4 +162,4 @@ Contributions are welcome! Please feel free to submit a Pull Request or open an 
 
 *This project demonstrates a complete machine learning pipeline from data preprocessing to model deployment, showcasing practical implementation of real estate price prediction with a user-friendly web interface.*
 
-**⭐ Star this repository if
+**⭐ Star this repository if you found it helpful!**
