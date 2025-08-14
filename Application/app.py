@@ -1,9 +1,11 @@
 import streamlit as st
 import numpy as np
 import joblib
+import os
 
-scaler = joblib.load(r'E:\Data Science\Projects\Real Estate Price Prediction\Saved Models\scaler.pkl')
-model = joblib.load(r'E:\Data Science\Projects\Real Estate Price Prediction\Saved Models\model.pkl')
+# Use relative paths for deployment
+scaler = joblib.load(os.path.join(os.path.dirname(__file__), "scaler.pkl"))
+model = joblib.load(os.path.join(os.path.dirname(__file__), "model.pkl"))
 
 st.title("Real Estate Price Predictor")
 
@@ -23,12 +25,8 @@ st.divider()
 
 if predictbutton:
     X1 = np.array(X)
-
     X_array = scaler.transform([X1])
-
     prediction = model.predict(X_array)[0]
-
     st.write(f"Predicted House Price: ${prediction:,.2f}")
-
-else :
+else:
     st.write("Please enter all the values to make a prediction.")
