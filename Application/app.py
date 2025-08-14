@@ -30,3 +30,5 @@ if predictbutton:
     st.write(f"Predicted House Price: ${prediction:,.2f}")
 else:
     st.write("Please enter all the values to make a prediction.")
+
+st.text("Made with ❤️ by Daivagna")
