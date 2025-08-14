@@ -4,7 +4,7 @@ This project implements a machine learning solution to predict real estate price
 
 ## 🚀 Live Demo
 
-**Web Application:** [https://houses-price-prediction.streamlit.app/](https://houses-price-prediction.streamlit.app/)
+**Web Application:** [House Price Predictor](https://houses-price-prediction.streamlit.app/)
 
 ## Project Structure
 
