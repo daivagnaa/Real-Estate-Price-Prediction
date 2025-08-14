@@ -31,4 +31,4 @@ if predictbutton:
 else:
     st.write("Please enter all the values to make a prediction.")
 
-st.text("Made with ❤️ by Daivagna")
+st.markdown("<br><center>Made With 💗 by Daivagna Parmar</center>", unsafe_allow_html=True)
